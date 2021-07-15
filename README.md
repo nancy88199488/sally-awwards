@@ -23,3 +23,15 @@ To access this project on your local files, you can clone it using these steps
 
 * Python
 * Django
+
+##  Contacts
+
+Email:nancykemuntosalome@gmail.com
+
+##  License
+
+This project is under the [MIT] (LICENSE) license
+
+Copyright (c) 2021. Nancy Kemunto
+
+
