@@ -10,7 +10,7 @@ class Profile(models.Model):
     datecreated= models.DateField(auto_now_add=True )
 
     def __str__(self):
-        return self.user.username
+        return f'{self.user.username} Profile'
  
     def save_profile(self):
         self.user
