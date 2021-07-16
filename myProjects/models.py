@@ -5,7 +5,7 @@ from cloudinary.models import CloudinaryField
 # Create your models here.
 class Profile(models.Model):
     profile_image= CloudinaryField('images')
-    Bio = models.CharField(max_length=30)
+    bio = models.CharField(max_length=30)
     user = models.OneToOneField(User,on_delete=models.CASCADE)
     datecreated= models.DateField(auto_now_add=True )
 
