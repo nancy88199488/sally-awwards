@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'myProjects',
     'cloudinary',
+    'star_ratings',
     'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
