@@ -15,7 +15,7 @@ from .serializer import ProfileSerializer, myProjectSerializer
 
 # Create your views here.
 def index(request):
-    myProjects = myProjectSerializer.objects.all()
+    myProjects = MyProjects.objects.all()
     return render(request,'index.html',{"projects":projects})
 def register(request):
     if request.method=="POST":
