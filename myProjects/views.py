@@ -36,7 +36,7 @@ def register(request):
         'form':form,
         'profForm': prof
     }
-    return render(request, 'users/register.html', params)
+    return render(request, 'registration/signup.html', params)
 
 def searchprofile(request):
     if 'searchUser' in request.GET and request.GET['searchUser']:
@@ -65,7 +65,7 @@ def addProject(request):
         return redirect('home')  
     else:
         form = MyProjectsForm()
-    return render(request,'newProject.html',{'form':form})    
+    return render(request,'Project.html',{'form':form})    
 
 def profile(request,id):
     prof = Profile.objects.get(user = id)
@@ -103,7 +103,7 @@ class ProjectList(APIView):
 
 def projects(request,id):
     proj = MyProjects.objects.get(id = id)
-    return render(request,'readmore.html',{"projects":proj})
+    return render(request,'next.html',{"projects":proj})
 
 @login_required(login_url='login')   
 def rate(request,id):
@@ -116,7 +116,7 @@ def rate(request,id):
             rate.user = user
             rate.projects = project
             rate.save()
-            return redirect('home')
+            return redirect('index')
     else:
         form = RatingForm()
     return render(request,"rate.html",{"form":form,"project":project})   
