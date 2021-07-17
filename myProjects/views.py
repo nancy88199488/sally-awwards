@@ -16,7 +16,7 @@ from .serializer import ProfileSerializer, myProjectSerializer
 def index(request):
     myProjects = MyProjects.objects.all()
     return render(request,'index.html',{"projects":projects})
-def register(request):
+def signup(request):
     if request.method=="POST":
         form=SignUpForm(request.POST)
         procForm=UpdateUserProfileForm(request.POST, request.FILES)
@@ -35,7 +35,7 @@ def register(request):
         'form':form,
         'profForm': prof
     }
-    return render(request, 'registration/signup.html', params)
+    return render(request, 'registration/login.html', params)
 
 def searchprofile(request):
     if 'searchUser' in request.GET and request.GET['searchUser']:
@@ -61,7 +61,7 @@ def addProject(request):
             newProj = form.save(commit = False)
             newProj.user = user_profile
             newProj.save()
-        return redirect('home')  
+        return redirect('index')  
     else:
         form = MyProjectsForm()
     return render(request,'Project.html',{'form':form})    
