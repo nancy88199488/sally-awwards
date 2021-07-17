@@ -7,7 +7,6 @@ from .models import MyProjects,Profile
 from django.shortcuts import get_object_or_404
 from django.http import HttpResponseRedirect
 from django.contrib.auth.models import User
-from django.urls import reverse
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from .models import Profile,MyProjects,Rating
