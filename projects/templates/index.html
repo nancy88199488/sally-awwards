@@ -1,0 +1,35 @@
+<div class="" style="font-family: 'Viaoda Libre', cursive;">
+    {%extends 'base.html'%}
+    {%block content%}
+    <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h2 class="display-4"><b style="color:080705;"><i>Welcome To Sally Awwards</i></b></h2>
+            <p class="lead" style="color:080705; font-size:30px;"><b>Go through other peoples' projects, Review and Rate them! You can
+                    also submit yours to be reviewed!</b>
+            </p>
+        </div>
+    </div>
+    <h1 style="color:ffffff;text-align: center;">Here is a Sample of Projects</h1>
+    <div class="row">
+        {%for proj in projects%}
+        <div class="col-md-3">
+            <div class="card">
+                <div class="view view-cascade overlay">
+                    <img src="{{proj.projectscreenshot.url}}" class="img-fluid" alt="">
+                    <a href="projects/{{proj.id}}">
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="">{{proj.title}}</h5>
+                    <a href="projects/{{proj.id}}">Readmore</a>
+                </div>
+            </div>
+        </div>
+        {%endfor%}
+    </div>
+</div>
+
+{%endblock%}
+</div>

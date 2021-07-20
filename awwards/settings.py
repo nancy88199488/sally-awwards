@@ -47,11 +47,12 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 # Application definition
 
 INSTALLED_APPS = [
-    'myProjects',
+    'projects',
     'cloudinary',
     'star_ratings',
     'crispy_forms',
     'rest_framework',
+    'bootstrap3',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -178,7 +179,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 # redirects
-LOGIN_REDIRECT_URL = 'index'
+LOGIN_REDIRECT_URL = '/'
 
 LOGOUT_REDIRECT_URL = 'login'
 

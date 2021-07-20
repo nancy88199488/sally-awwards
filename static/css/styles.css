@@ -1,4 +1,9 @@
 body{
     color:f7fff7;
     font-family: 'Viaoda Libre', cursive;
+    font-size:20px;
+    font-weight:lighter;
+}
+.dropdown-item{
+    color:1982c4;
 }
