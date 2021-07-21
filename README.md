@@ -10,12 +10,13 @@ This application will allow a user to post a project he/she has created and get 
 
 As a user of the web application you will be able to:
 
-1.Sign up and log in
-2.View projects submitted by other users
-3.Submit your projects
-4.Rate a projects
-5.Edit your profile
-6.Generate APIs 7.Review a projects
+* Sign up and log in
+* View projects submitted by other users
+* Submit your projects
+* Rate a projects
+* Edit your profile
+* Generate APIs
+* Review a projects
 
 ## Prerequisites
 
