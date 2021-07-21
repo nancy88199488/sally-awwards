@@ -13,14 +13,14 @@
             <div class="panel panel-default">
 
                 <div class="panel-body card p-5 mt-5">
-                    <h3 class="text-center">Sign In</h3>
+                    <h3 class="text-center" style="color:000000;">Sign In</h3>
 
                     <form method="post">
                         {% csrf_token %}
                         {% bootstrap_form form %}
 
                         <div class="form-group">
-                            <input type="submit" class="btn btn-info btn-sm" value="Login">
+                            <input type="submit" class="btn btn-dark btn-sm" value="Login">
                         </div>
                         <p class="container">You dont have an account? <a href="/register"> Sign Up</a></p>
 

@@ -9,7 +9,7 @@
                 <div class="panel panel-default">
 
                     <div class="panel-heading">
-                        <h3 class="text-center">Submit Your Project</h3>
+                        <h3 class="text-center" style="color:000000;">Submit Your Project</h3>
                     </div>
                     <div class="panel-body">
 
@@ -17,7 +17,7 @@
                             {% csrf_token %}
                             {% bootstrap_form form %}
                             <div class="form-group">
-                                <input type="submit" class="btn btn-info btn-sm" value="Post">
+                                <input type="submit" class="btn btn-dark btn-sm" value="Post">
                             </div>
                             <input type="hidden" name="next" value="{{next}}">
 
